@@ -1,0 +1,6 @@
+streamlit
+pyautogui
+yagmail
+requests
+pyperclip
+selenium
