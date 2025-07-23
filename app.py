@@ -37,7 +37,7 @@ elif menu == "Send Email":
         st.success(result)
 
 elif menu == "Send SMS":
-    number = st.text_input("Enter Mobile Number (with country code if required):")
+    number = st.text_input("Enter Mobile Number (with country code):")
     msg = st.text_area("Enter your message:")
     if st.button("Send SMS"):
         if number and msg:
@@ -48,14 +48,10 @@ elif menu == "Send SMS":
 
 
 elif menu == "Make Phone Call":
-    st.markdown("### 📞 Make a Phone Call using Twilio")
     to_number = st.text_input("Enter receiver phone number with country code (e.g., +91XXXXXXXXXX)")
-    if st.button("Make Call", type="primary"):
-        if to_number.strip():
-            result = make_phone_call(to_number)
-            st.info(result)
-        else:
-            st.warning("Please enter a valid phone number.")
+    if st.button("Make Call"):
+        result = make_phone_call(to_number)
+        st.info(result)
 
 
 elif menu == "Post on LinkedIn":
