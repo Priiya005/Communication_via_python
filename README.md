@@ -5,7 +5,6 @@ A multi-channel communication system built with Python and Streamlit, allowing y
 - ✅ Emails
 - ✅ SMS using Twilio
 - ✅ LinkedIn posts
-- ✅ (Optional) Phone calls using Twilio/VoIP
 
 ## Live Demo
 
